@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+
+</head>
+<body  >
+    
+    
+<div >
+    
+
+</div>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <p ng-bind="lastname"></p>
+</div>
+    
+    
+    @section scripts
+    {
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl',
+                function($scope) {
+                    $scope.firstname = "John";
+                    $scope.lastname = "Doe";
+                });
+        </script>
+
+
+    }
+
+<p>Use the ng-bind directive to bind the innerHTML of an element to a property in the data model.</p>
+
+</body>
+</html>
